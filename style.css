@@ -1,0 +1,92 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-image: url(https://bogatyr.club/uploads/posts/2023-02/1677171559_bogatyr-club-p-fon-dlya-prezentatsii-minimalizm-svetlii-k-1.jpg)
+    
+    
+}
+
+.btn {
+	font-size: 40px;
+	font-family: monospace;
+    font-weight: bold;
+	color: #ffffff;
+	background: linear-gradient(to left, #b8cafa, #e7f0ff);
+	text-decoration: none;
+	padding: 10px 90px;
+	border-radius: 10px;
+    border-width: 0px;
+	background-size: 200%;
+	transition: .5s;
+    position: absolute;
+	top: 490px;;
+	
+	left: 790px;
+	animation:  ButtonRender 2s ease-in-out;
+    
+}
+
+.btn:hover {
+	background-position: right;
+}
+
+.content{
+    
+    font-size: 70px;
+    margin: 0 auto;
+    margin-left: 50px;
+
+    position: absolute;
+	top: 340px;
+	left: 515px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    opacity: 0.5;
+    
+    animation: render 2s ease-in-out; 
+}
+@keyframes render{
+
+	0%{
+		top: 270px;
+		opacity:0;
+	}
+	100%{
+		top: 340px;
+		opacity: 0.5;
+	}
+}
+@keyframes ButtonRender{
+	0%{
+		top: 590px;
+		opacity:0;
+	}
+	100%{
+		top: 490px;
+		opacity:1;
+	}
+}
+@media screen and (max-width: 1200px){
+    p{
+        font-size: 56px;
+    }
+}
+@media screen and (max-width: 998px){
+    p{
+        font-size: 46px;
+    }
+}
+@media screen and (max-width: 768px){
+    p{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 576px){
+    p{
+        font-size: 24px;
+    }
+}
